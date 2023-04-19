@@ -1,30 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador de Texto</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <div class="cabeza">
-            <h1><img src="Imagenes/LogoLogo.png" alt="Logo del encrptador"></h1>
-        </div>
-    </header>    
-
-    <main>
-        <section class="encriptador">
-            <textarea name="encriptar" id="mensaje" cols="30" rows="10" placeholder="Digite su texto"></textarea>
-
-            <input type="submit" value="Encriptar" class="botonEncriptar">
-            <input type="submit" value="Desencriptar" class="botonDesencriptar">
-
+    <main class="main">
+        <section class="main_logo">
+            <h1 class="main_h1"><img class="main_img" src="Imagenes/LogoLogo.png" alt="Alura Logo"></h1>
         </section>
-        <section>
-
-        </section class="desencriptador">
+        <section class="main_encriptador">
+            <textarea class="main_textarea" name="mensaje" placeholder="Digite su texto"></textarea>
+            <div class="main_footer">
+                <div class="main_small">
+                    <small>Solo letras minúsculas y sin acentos</small>
+                </div>
+            </div>
+            <div class="main_buttons">
+                <button class="main__button main_button_primary" id="encriptar">Encriptar</button>
+                <button class="main__button main_button_secondary" id="desencriptar">Desencriptar</button>
+            </div>
+        </section>
+        <aside class="aside">
+            <section class="aside_content" id="ningunMensaje">
+                <div class="aside_img">
+                    <img src="Imagenes/Muñeco.svg" alt=" Ningun mensaje encontrado-Muñeco">
+                </div>
+                <div class="aside_text aside_none">
+                    <h2 class="aside_h2">Ningun mensaje fue encontrado</h2>
+                    <p class="aside_p">Ingresa el texto que desees encriptar o desencriptar</p>
+                </div>
+            </section>
+            <section class="aside_content aside_content-between aside_content-none" id="mensajeEncontrado">
+                <div class="aside_mensaje">
+                    <p class="aside_encriptado" id="mensajeEncriptador">Hola</p>
+                </div>
+                <button class="aside_button copiar_button" id="copiarMensaje">Copiar</button>
+            </section>
+        </aside>
     </main>
 </body>
+
 </html>
