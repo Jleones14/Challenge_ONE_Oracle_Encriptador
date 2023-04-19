@@ -1,12 +1,13 @@
-body{
+body {
     background: #F3F5FC;
     color: #FFFFFF;
     display: flex;
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
 }
 
-.main{
+.main {
     width: 100%;
     min-height: 95vh;
     padding: 2em 0;
@@ -14,17 +15,17 @@ body{
     flex-direction: row;
 }
 
-.main_logo{
+.main_logo {
     display: flex;
     justify-content: center;
     min-width: 10vw;
 }
 
-.main_img{
+.main_img {
     max-width: 8em;
 }
 
-.main_encriptador{
+.main_encriptador {
     margin-top: 4em;
     min-height: 60vh;
     width: 60vw;
@@ -33,7 +34,7 @@ body{
     justify-content: space-between;
 }
 
-.main_textarea{
+.main_textarea {
     width: 100%;
     background-color: #F3F5FC;
     min-height: 60vh;
@@ -44,38 +45,38 @@ body{
     border: none;
 }
 
-.main_textarea::placeholder{
+.main_textarea::placeholder {
     color: #8b9ad1;
 }
 
-.main_textarea:focus{
+.main_textarea:focus {
     outline: none;
 }
 
-.main_footer{
+.main_footer {
     display: flex;
     flex-direction: column;
 }
 
-.main_small{
+.main_small {
     width: 100%;
     margin-bottom: 0.5em;
     color: #050505;
 }
 
-.main_small{
+.main_small {
     width: 100%;
     margin-bottom: 0.5em;
 }
 
-small{
+small {
     padding-left: 1.5em;
     position: relative;
     display: flex;
     align-items: center;
 }
 
-small::before{
+small::before {
     content: '';
     background-image: url("Imagenes/bi_exclamation-circle-fill.svg");
     width: 1em;
@@ -89,7 +90,7 @@ small::before{
     filter: invert(1) brightness(2) opacity() drop-shadow();
 }
 
-.main_buttons{
+.main_buttons {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -97,7 +98,7 @@ small::before{
     align-items: center;
 }
 
-.main_button_primary{
+.main_button_primary {
     background-color: #4EA1FA;
     color: #FFFFFF;
     transition: background 250ms;
@@ -110,11 +111,11 @@ small::before{
     width: 100%;
 }
 
-.main_button_primary:hover{
+.main_button_primary:hover {
     background: #007bff;
 }
 
-.main_button_secondary{
+.main_button_secondary {
     background-color: #1D1E23;
     border: 0.15em solid #1D1E23;
     color: #FFFFFF;
@@ -128,94 +129,98 @@ small::before{
     width: 100%;
 }
 
-.main_button_secondary:hover{
+.main_button_secondary:hover {
     background: #4EA1FA;
 }
 
-.aside{
-    width: 30vw;
+.aside {
+    width: 20vw;
     min-height: 60vh;
     max-height: calc(90vh - 2em);
     padding: 0 3em;
 }
 
 .aside_content {
-        background-color: #4EA1FA;
-        box-shadow: 0em 0em 2em 0em rgba(0,0,0,0.38);
-        -webkit-box-shadow: 0em 0em 2em 0em rgba(0,0,0,0.38);
-        -moz-box-shadow: 0em 0em 2em 0em rgba(0,0,0,0.38);
-        height: 100%;
-        width: 100%;
-        border-radius: 1.5em;
-        padding: 2em;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+    background-color: #4EA1FA;
+    box-shadow: 0em 0em 2em 0em rgba(0, 0, 0, 0.38);
+    -webkit-box-shadow: 0em 0em 2em 0em rgba(0, 0, 0, 0.38);
+    -moz-box-shadow: 0em 0em 2em 0em rgba(0, 0, 0, 0.38);
+    height: 100%;
+    width: 100%;
+    border-radius: 1.5em;
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .aside_content-between {
-            justify-content: space-between;
+    justify-content: space-between;
 }
 
 .aside_contentnone {
-            display: none;
+    display: none;
 }
 
 .aside_mensaje {
-        overflow-y: auto;
-        width: 100%;
-        height: 100%;
+    overflow-y: auto;
+    width: 100%;
+    height: 100%;
 }
-    
+
 .aside_text {
-        margin-top: 3em;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+    margin-top: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .aside_h2 {
-        font-size: 2em;
-        text-align: center;
-        line-height: 1em;
-        font-weight: 600;
+    font-size: 2em;
+    text-align: center;
+    line-height: 1em;
+    font-weight: 600;
 }
 
-/*.aside_p {
-        margin-top: .5em;
+.aside_p {
+        margin-top: 1.5em;
         width: 75%;
         text-align: center;
-}*/
+}
 
 .aside_encriptado {
-        font-size: 1.75em;
-        text-align: center;
-        line-height: 1em;
-        max-height: 94vh;
-        word-break: break-all;
+    font-size: 1.75em;
+    text-align: center;
+    line-height: 1em;
+    max-height: 94vh;
+    word-break: break-all;
 }
 
 .aside_button {
-        border-radius: 0.5em;
-        margin-top: 1em;
-        padding: 1em;
-        min-height: 6vh;
-        font-weight: 600;
-        font-family: 1.5em;
-        width: 100%;
-        cursor: pointer;
-        background-color: #1D1E23;
-        border: 0.15em solid #1D1E23;
-        color: #4EA1FA;
-        transition: opacity 250ms;
-        margin-left: 0.75em;
+    border-radius: 0.5em;
+    margin-top: 8em;
+    padding: 1em;
+    min-height: 6vh;
+    font-weight: 600;
+    font-family: 1.5em;
+    width: 100%;
+    cursor: pointer;
+    background-color: #1D1E23;
+    border: 0.15em solid #1D1E23;
+    color: #4EA1FA;
+    transition: opacity 250ms;
+    margin-left: 0.75em;
 }
 
-.aside_button:hover{
+.aside_button:hover {
     opacity: .8;
 }
 
-
-
+footer {
+    text-align: center;
+    background: url(Imagenes/bg.jpg);
+    padding: 40px;
+    margin-top: auto;
+}
