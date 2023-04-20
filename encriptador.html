@@ -20,7 +20,7 @@
             <h1 class="main_h1"><img class="main_img" src="Imagenes/LogoLogo.png" alt="Alura Logo"></h1>
         </section>
         <section class="main_encriptador">
-            <textarea class="main_textarea" name="mensaje" placeholder="Digite el texto que deseé encriptar o desencriptar"></textarea>
+            <textarea class="main_textarea" name="mensaje" id="mensaje" placeholder="Digite el texto que deseé encriptar o desencriptar"></textarea>
             <div class="main_footer">
                 <div class="main_small">
                     <small>Solo letras minúsculas y sin acentos</small>
@@ -34,19 +34,25 @@
         <aside class="aside">
             <section class="aside_content" id="ningunMensaje">
                 <div class="aside_img">
-                    <img src="Imagenes/Muñeco.svg" alt=" Ningun mensaje encontrado-Muñeco">
+                    <img src="Imagenes/Muñeco.svg" alt="Ningun mensaje encontrado - muñeco">
                 </div>
                 <div class="aside_text aside_none">
-                    <h2 class="aside_h2">Ningun mensaje fue encontrado</h2>
+                    <h2 class="aside_h2">Ningún mensaje fue encontrado</h2>
                     <p class="aside_p">Ingresa el texto que desees encriptar o desencriptar</p>
                 </div>
-                    <button class="aside_button copiar_button" id="copiarMensaje">Copiar</button>
-                </section>           
+            </section>
+            <section class="aside_content aside_content_between aside_content_none" id="mensajeEncontrado">
+                <div class="aside_mensaje">
+                    <p class="aside_encrypt" id="mensajeEncriptado">Hola</p>
+                </div>
+                <button class="aside_button copia_button" id="copiarMensaje">Copiar</button>
+            </section>
         </aside>
     </main>
     <footer>
         <p class="copyright">&copy Copyright Andrés Chávez - 2023</p>
         <p class="copyright">Encriptador de Texto</p>
     </footer>
+    <script src="script.js"></script>
 </body>    
 </html>

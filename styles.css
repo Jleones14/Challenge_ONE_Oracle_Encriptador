@@ -155,11 +155,11 @@ small::before {
     flex-direction: column;
 }
 
-.aside_content-between {
+.aside_content_between {
     justify-content: space-between;
 }
 
-.aside_contentnone {
+.aside_content_none {
     display: none;
 }
 
@@ -190,7 +190,7 @@ small::before {
         text-align: center;
 }
 
-.aside_encriptado {
+.aside_encrypt {
     font-size: 1.75em;
     text-align: center;
     line-height: 1em;
