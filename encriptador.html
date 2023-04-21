@@ -20,15 +20,16 @@
             <h1 class="main_h1"><img class="main_img" src="Imagenes/LogoLogo.png" alt="Alura Logo"></h1>
         </section>
         <section class="main_encriptador">
-            <textarea class="main_textarea" name="mensaje" id="mensaje" placeholder="Digite el texto que deseé encriptar o desencriptar"></textarea>
+            <textarea class="main_textarea" name="mensaje" id="mensaje"
+                placeholder="Digite el texto que deseé encriptar o desencriptar"></textarea>
             <div class="main_footer">
                 <div class="main_small">
                     <small>Solo letras minúsculas y sin acentos</small>
                 </div>
-            </div>
-            <div class="main_buttons">
-                <button class="main__button main_button_primary" id="encriptar">Encriptar</button>
-                <button class="main__button main_button_secondary" id="desencriptar">Desencriptar</button>
+                <div class="main_buttons">
+                    <button class="main__button main_button_primary" id="encriptar">Encriptar</button>
+                    <button class="main__button main_button_secondary" id="desencriptar">Desencriptar</button>
+                </div>
             </div>
         </section>
         <aside class="aside">
@@ -53,6 +54,20 @@
         <p class="copyright">&copy Copyright Andrés Chávez - 2023</p>
         <p class="copyright">Encriptador de Texto</p>
     </footer>
+    <div class="modal" id="modal">
+        <div class="modal__container">
+            <div class="modal__header">
+                <h3 class="modal__title">Error</h3>
+            </div>
+            <div class="modal__body">
+                <p class="modal__p">El texto no puede contener mayusculas y/o caracteres especiales</p>
+            </div>
+            <div class="modal__footer">
+                <button class="modal__button" id="modalButton">Entendido</button>
+            </div>
+        </div>
+    </div>
     <script src="script.js"></script>
-</body>    
+</body>
+
 </html>
